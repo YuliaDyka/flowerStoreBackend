@@ -45,3 +45,65 @@ And now you have all what you need to run your server
 To do this you need just to run app.py
 
 If you are using vscode you can just press `F5` to run with debuger or `CTRL+F5` to run without debuger anywhere in this poject.
+
+CRUD requests
+\*User:
+
+-----POST:http://127.0.0.1:5000/user
+
+```json
+{
+  "name": "user",
+  "email": "user@gmail.com",
+  "password": "1234",
+  "is_admin": false
+}
+```
+
+-----POST: http://127.0.0.1:5000/user/login
+
+```json
+{
+  "email": "admin@gmail.com",
+  "password": "1234"
+}
+```
+
+-----GET(all):http://127.0.0.1:5000/user
+
+-----PUT:http://127.0.0.1:5000/user/1
+
+```json
+{
+  "name": "user1111",
+  "email": "user@gmail.com",
+  "password": "1234",
+  "is_admin": false
+}
+```
+
+\*Category:
+------POST:http://127.0.0.1:5000/category
+
+```json
+{
+  "name": "test"
+}
+```
+
+-----GET(all):http://127.0.0.1:5000/category
+
+\*Goods:
+
+```
+-----POST:http://127.0.0.1:5000/goods
+```
+
+```json
+{
+  "name": "rose",
+  "price": 20,
+  "description": "hfhf",
+  "category_id": 1
+}
+```
