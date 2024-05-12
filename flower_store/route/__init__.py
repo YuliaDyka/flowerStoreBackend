@@ -10,6 +10,8 @@ def register_routes(app: Flask) -> None:
 
     from .user_route import user_bp
     from .category_route import category_bp
+    from .goods_route import goods_bp
 
     app.register_blueprint(user_bp)
     app.register_blueprint(category_bp)
+    app.register_blueprint(goods_bp)
